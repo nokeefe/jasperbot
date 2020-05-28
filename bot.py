@@ -9,8 +9,9 @@ from dotenv import load_dotenv
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
+PREFIX = os.getenv('BOT_PREFIX')
 
-bot = commands.Bot(command_prefix='!')
+bot = commands.Bot(command_prefix=PREFIX)
 
 
 @bot.event
